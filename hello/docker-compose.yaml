@@ -1,0 +1,13 @@
+network:
+  default:
+    external:
+      name: test
+
+
+services:
+  hello-ms:
+    container-name: hellomsc
+    image: helloimg
+    build:
+      context: ./hello
+      dockerfile: Dockerfile
